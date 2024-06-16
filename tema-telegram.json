@@ -14,30 +14,135 @@
             {
                "id":"epjq0ru2jddh0n6t12vqb7w3",
                "groupId":"w04g51nfueflr3xb162nl5ff",
-               "outgoingEdgeId":"o9g0dd8jcmkpysmavo3id2np",
+               "outgoingEdgeId":"a1us96nj91bghtdgn1pemv66",
                "type":"start",
                "label":"Start"
             }
          ]
       },
       {
-         "id":"nf5a58gns1dtgspxrb7a07pu",
-         "title":"inicio",
+         "id":"bzkbs412ywwvli5ekzdrnuxt",
+         "title":"Pack Typebot",
          "graphCoordinates":{
-            "x":405,
-            "y":258
+            "x":467,
+            "y":246.22
          },
          "blocks":[
             {
-               "id":"ozb7bcjow6bt7rg5bjhk2xg1",
-               "groupId":"nf5a58gns1dtgspxrb7a07pu",
+               "id":"rfzsl1wi7qw217y6szefvm6a",
+               "groupId":"bzkbs412ywwvli5ekzdrnuxt",
+               "type":"text",
+               "content":{
+                  "richText":[
+                     {
+                        "type":"p",
+                        "children":[
+                           {
+                              "text":"Informe seu nome"
+                           }
+                        ]
+                     }
+                  ]
+               }
+            },
+            {
+               "id":"ssxn4tg6qpcepi1vwv9ccdel",
+               "groupId":"bzkbs412ywwvli5ekzdrnuxt",
                "type":"text input",
                "options":{
                   "labels":{
-                     "placeholder":"Mensagem",
-                     "button":""
+                     "placeholder":"Informe seu nome aqui!",
+                     "button":"Enviar"
                   },
+                  "variableId":"vfqyybt5wjnffzhqjgphpve2p",
                   "isLong":false
+               }
+            },
+            {
+               "id":"fjp9n8twbg7wb83ztqwa8406",
+               "groupId":"bzkbs412ywwvli5ekzdrnuxt",
+               "type":"text",
+               "content":{
+                  "richText":[
+                     {
+                        "type":"p",
+                        "children":[
+                           {
+                              "bold":true,
+                              "text":"{{nome}} "
+                           }
+                        ]
+                     },
+                     {
+                        "type":"p",
+                        "children":[
+                           {
+                              "text":"Bem-vindo ao Mundo da Automação com Pack Typebot! 🤖"
+                           }
+                        ]
+                     },
+                     {
+                        "type":"p",
+                        "children":[
+                           {
+                              "text":""
+                           }
+                        ]
+                     },
+                     {
+                        "type":"p",
+                        "children":[
+                           {
+                              "text":"🛒 Não perca tempo! Seja membro do Pack Typebot agora mesmo!"
+                           }
+                        ]
+                     },
+                     {
+                        "type":"p",
+                        "children":[
+                           {
+                              "text":""
+                           }
+                        ]
+                     },
+                     {
+                        "type":"p",
+                        "children":[
+                           {
+                              "text":"Aproveite o valor promocional para acesso vitalício!"
+                           }
+                        ]
+                     }
+                  ]
+               }
+            },
+            {
+               "id":"h6rc8m71riuxx04gjg64jpqs",
+               "groupId":"bzkbs412ywwvli5ekzdrnuxt",
+               "type":"choice input",
+               "items":[
+                  {
+                     "id":"qvu7rdh7kzbj1svnkri0parv",
+                     "blockId":"h6rc8m71riuxx04gjg64jpqs",
+                     "outgoingEdgeId":"yhtg713pr5mz9bykbage880e",
+                     "type":0,
+                     "content":"Saiba Mais"
+                  }
+               ],
+               "options":{
+                  "isMultipleChoice":false,
+                  "buttonLabel":"Send",
+                  "isSearchable":false,
+                  "searchInputPlaceholder":"Filter the options..."
+               }
+            },
+            {
+               "id":"co7ej5tx472fd62x693316n9",
+               "groupId":"bzkbs412ywwvli5ekzdrnuxt",
+               "type":"Redirect",
+               "options":{
+                  "url":"https://packtypebot.com.br/#preco",
+                  "isNewTab":false
                }
             }
          ]
@@ -45,13 +150,25 @@
    ],
    "edges":[
       {
-         "id":"o9g0dd8jcmkpysmavo3id2np",
+         "id":"a1us96nj91bghtdgn1pemv66",
          "from":{
             "groupId":"w04g51nfueflr3xb162nl5ff",
             "blockId":"epjq0ru2jddh0n6t12vqb7w3"
          },
          "to":{
-            "groupId":"nf5a58gns1dtgspxrb7a07pu"
+            "groupId":"bzkbs412ywwvli5ekzdrnuxt"
+         }
+      },
+      {
+         "id":"yhtg713pr5mz9bykbage880e",
+         "from":{
+            "groupId":"bzkbs412ywwvli5ekzdrnuxt",
+            "blockId":"h6rc8m71riuxx04gjg64jpqs",
+            "itemId":"qvu7rdh7kzbj1svnkri0parv"
+         },
+         "to":{
+            "groupId":"bzkbs412ywwvli5ekzdrnuxt",
+            "blockId":"co7ej5tx472fd62x693316n9"
          }
       }
    ],
@@ -118,10 +235,10 @@
       }
    },
    "createdAt":"2024-06-16T04:20:14.353Z",
-   "updatedAt":"2024-06-16T04:47:30.469Z",
+   "updatedAt":"2024-06-16T05:02:08.309Z",
    "icon":"https://s3.typebot.io/public/workspaces/clxgpan6q000rljk8iyy6q66x/typebots/clxgpawpm000p10ew33m2mf3l/blocks/t99vhr78d4ebglt6ajigd7wj?v=1718511653999",
    "folderId":"clxgqhtu90003pk1prlo8zz6q",
-   "publicId":"tema-telegram-stj9grs",
+   "publicId":"tema-telegram-v2",
    "customDomain":null,
    "workspaceId":"clnr64nj00001n21oaw5nat15",
    "resultsTablePreferences":null,
