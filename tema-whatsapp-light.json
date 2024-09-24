@@ -1,130 +1,131 @@
 {
-  "version": "6",
-  "id": "cm1cmltb30003c0utlf9sjf0s",
-  "name": "Tema Whatsapp",
-  "events": [
-    {
-      "id": "yrr8y4zobeuilc4hgi0upv4m",
-      "outgoingEdgeId": "hadici5c9y7j268r2dmr13re",
-      "graphCoordinates": { "x": 0, "y": 0 },
-      "type": "start"
-    }
-  ],
-  "groups": [
-    {
-      "id": "ryb27uv1cjy7zwx62nasim8q",
-      "title": "Pack Typebot",
-      "graphCoordinates": { "x": 398, "y": -6.56 },
-      "blocks": [
-        {
-          "id": "okkwzkr1qifomzx7cvwrt56z",
-          "type": "text",
-          "content": {
-            "richText": [
-              { "type": "p", "children": [{ "text": "Informe seu nome" }] }
-            ]
-          }
-        },
-        {
-          "id": "u3iqumupccy94li0p8jvr2t8",
-          "type": "text input",
-          "options": {
-            "labels": {
-              "placeholder": "Informe seu nome aqui!",
-              "button": "Enviar"
-            },
-            "variableId": "vxdnn35rtjib49ifx1aglqf3p",
-            "isLong": false
-          }
-        },
-        {
-          "id": "t16ejdpe2y5cwlrm6iu1a5oq",
-          "type": "text",
-          "content": {
-            "richText": [
-              {
-                "type": "p",
-                "children": [{ "bold": true, "text": "$meu_nome" }]
-              },
-              {
-                "type": "p",
-                "children": [
-                  {
-                    "text": "Bem-vindo ao Mundo da Automação com Pack Typebot! 🤖"
-                  }
-                ]
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
-  "edges": [
-    {
-      "id": "hadici5c9y7j268r2dmr13re",
-      "from": { "eventId": "yrr8y4zobeuilc4hgi0upv4m" },
-      "to": { "groupId": "ryb27uv1cjy7zwx62nasim8q" }
-    }
-  ],
-  "variables": [
-    {
-      "id": "vxdnn35rtjib49ifx1aglqf3p",
-      "name": "nome",
-      "isSessionVariable": false
-    }
-  ],
-  "theme": {
-    "general": {
-      "font": "Open Sans",
-      "background": {
-        "type": "Image",
-        "content": "https://s3.typebot.io/public/workspaces/clxgpan6q000rljk8iyy6q66x/typebots/clxgpawpm000p10ew33m2mf3l/blocks/hw249uzjqo07tp4g5q6f9rox?v=1718491741261"
-      }
-    },
-    "chat": {
-      "hostAvatar": {
-        "isEnabled": true,
-        "url": "$meu_avatar"
-      },
-      "hostBubbles": { "backgroundColor": "#FFFFFF", "color": "#303235" },
-      "guestBubbles": { "backgroundColor": "#d9fdd2", "color": "#000000" },
-      "buttons": { "backgroundColor": "#128c7e", "color": "#FFFFFF" },
-      "inputs": {
-        "backgroundColor": "#FFFFFF",
-        "color": "#303235",
-        "placeholderColor": "#9095A0"
-      }
-    },
-    "customCss": ".typebot-host-bubble {\n  padding-right: 12px;\n}\n#checkIcon {\n  stroke-dasharray: 40;\n  stroke-dashoffset: 40;\n  z-index: 99;\n}\n#checkIcon path:nth-child(1) {  \n  animation: showIcon 250ms ease forwards;\n  animation-delay: 500ms;\n}\n#checkIcon path:nth-child(2) {  \n  animation: showIcon 250ms ease forwards;\n  animation-delay: 400ms;\n}\n@keyframes showIcon {\n  to { stroke-dashoffset: 0 };\n}\n.typebot-chat-view > .flex:first-child {\n    padding-top: 30px;\n}\n\n\n.typebot-container {\n    background-size: initial!important;\n    background-repeat: repeat-x!important;\n}\n.typebot-host-bubble>.bubble-typing {\n  border-radius: 0 5px 5px 5px;\n}\n.typebot-host-bubble>.bubble-typing:after {\n    position: absolute;\n    content: \"\";\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 0px 10px 10px 0;\n    border-color: transparent #fff transparent transparent;\n    top: 0;\n    left: -10px;\n}\n.typebot-guest-bubble {\n  position: relative;\n  border-radius: 5px 0 5px 5px;\n}\n.typebot-guest-bubble:after {\n  position: absolute;\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-style: solid;\n}\n.typebot-guest-bubble:after {\n    border-width: 0px 0 10px 10px;\n    border-color: transparent transparent transparent #D9FDD2;\n    top: 0;\n    right: -10px;\n    border-style: solid;\n}\niframe[src=\"\"] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  display: relative;\n  width: 100%;\n  height: 100% !important;\n  z-index: 999999;\n  border: none;\n  padding: 0;\n  margin: 0;\n}\n.info-container {\nfont-size: 14px;\n}\n.typebot-input .typebot-button {\n  content: \"\";\n  background: rgba(0, 138, 134, 1);\n  border-radius: 50%; \n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 50px; \n  height: 50px; \n  border: none;\n  font-size: 0px;\n  color: transparent;\n}\n.typebot-input .typebot-button::before {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  width: 25px;\n  height: 25px;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\" width=\"19px\"><path d=\"M476.59 227.05l-.16-.07L49.35 49.84A23.56 23.56 0 0027.14 52 24.65 24.65 0 0016 72.59v113.29a24 24 0 0019.52 23.57l232.93 43.07a4 4 0 010 7.86L35.53 303.45A24 24 0 0016 327v113.31A23.57 23.57 0 0026.59 460a23.94 23.94 0 0013.22 4 24.55 24.55 0 009.52-1.93L476.4 285.94l.19-.09a32 32 0 000-58.8z\" fill=\"white\"/></svg>');\n}\n.typebot-input .typebot-button .send-icon {\n  display: none; \n}\n\n.disabled\\:opacity-50:disabled {\n    opacity: 100%;\n}\n@media (max-width: 500px) {\n.info-container {\nmax-width: 400px !important;\n}\n}\na#lite-badge {\n  display: none!important;\n}"
-  },
-  "selectedThemeTemplateId": null,
-  "settings": {
-    "general": {
-      "isBrandingEnabled": false,
-      "isInputPrefillEnabled": true,
-      "isHideQueryParamsEnabled": true,
-      "rememberUser": { "isEnabled": false }
-    },
-    "typingEmulation": { "enabled": true, "speed": 300, "maxDelay": 1.5 },
-    "metadata": {
-      "title": "(1) WhatsApp",
-      "description": "",
-      "imageUrl": "https://s3.typebot.io/public/workspaces/clxgpan6q000rljk8iyy6q66x/typebots/clxgpawpm000p10ew33m2mf3l/blocks/s18qxz52lu4cfedpbuhmbch8?v=1718491503856",
-      "favIconUrl": "https://s3.typebot.io/public/workspaces/clxgpan6q000rljk8iyy6q66x/typebots/clxgpawpm000p10ew33m2mf3l/blocks/ppd1nlwo6woy0e8z6frmr62i?v=1718491461881",
-      "customHeadCode": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css\">\n<style>\n  .hide {\n    display: none!important;\n  }\n  typebot-standard {\n    position: relative;\n    z-index: 9999;\n  }\n  #__next {\n    position: relative;\n    z-index: 9999;\n}\n.user-bar {\n  width: 100%;\n  height: 55px;\n  background: #005e54;\n  color: #fff;\n  padding: 0;\n  font-size: 24px;\n  position: fixed;\n  z-index: 99999;\n  display: block;\n  top: 0;\n}\n.user-bar:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n.user-bar div {\n    float: left;\n    transform: translateY(-50%);\n    position: relative;\n    top: 50%;\n    margin-left: 10px;\n}\n.user-bar .actions {\n  float: right;\n  margin: 0 0 0 20px;\n}\n.user-bar .actions.more {\n  margin: 0 12px 0 32px;\n}\n.user-bar .actions.attachment {\n  margin: 0 0 0 30px;\n}\n.user-bar .actions.attachment i {\n  display: block;\n  transform: rotate(-45deg);\n}\n.user-bar .avatar {\n  margin: 0 0 0 5px;\n  width: 36px;\n  height: 36px;\n}\n.user-bar .avatar img {\n  border-radius: 50%;\n  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);\n  display: block;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.user-bar .name {\n  font-size: 17px;\n  font-weight: 600;\n  text-overflow: ellipsis;\n  letter-spacing: 0.3px;\n  margin: 0 0 0 8px;\n  overflow: hidden;\n  white-space: nowrap;\n  width: 150px;\n}\n.user-bar .status {\n  display: block;\n  font-size: 13px;\n  font-weight: 400;\n  letter-spacing: 0;\n}\n\n.disabled\\:opacity-50:disabled {\n    opacity: 100%;\n}\n</style>\n<script>\nfunction criarBarra() {\n  var userBar = document.createElement(\"div\");\n  userBar.className = \"user-bar\";\n  var icone_botao_voltar = document.createElement(\"div\");\n  icone_botao_voltar.className = \"back\";\n  icone_botao_voltar.innerHTML = '<i class=\"zmdi zmdi-arrow-left\"></i>';\n  var avatar = document.createElement(\"div\");\n  avatar.className = \"avatar\";\n  avatar.innerHTML = '<img src=\"$meu_avatar\" alt=\"Avatar\">';\n  var name = document.createElement(\"div\");\n  name.className = \"name\";\n  name.innerHTML = '<span>{{$meu_nome}}</span> <span data-testid=\"psa-verified\" data-icon=\"psa-verified\" class=\"\"><svg viewBox=\"0 0 18 18\" height=\"18\" width=\"18\" preserveAspectRatio=\"xMidYMid meet\" class=\"\" version=\"1.1\" x=\"0px\" y=\"0px\" enable-background=\"new 0 0 18 18\" xml:space=\"preserve\"><polygon id=\"Star-2\" fill=\"#00DA60\" points=\"9,16 7.1,16.9 5.8,15.2 3.7,15.1 3.4,13 1.5,12 2.2,9.9 1.1,8.2 2.6,6.7 2.4,4.6 4.5,4 5.3,2 7.4,2.4 9,1.1 10.7,2.4 12.7,2 13.6,4 15.6,4.6 15.5,6.7 17,8.2 15.9,9.9 16.5,12 14.7,13 14.3,15.1 12.2,15.2 10.9,16.9 \"></polygon><polygon id=\"Check-Icon\" fill=\"#FFFFFF\" points=\"13.1,7.3 12.2,6.5 8.1,10.6 5.9,8.5 5,9.4 8,12.4 \"></polygon></svg></span><span class=\"status\">Online</span>';\n  var icone_camera = document.createElement(\"div\");\n  icone_camera.className = \"actions\";\n  icone_camera.style.float = \"right\";\n  icone_camera.innerHTML = '<i class=\"zmdi zmdi-videocam\" style=\"background-color: transparent;\"></i>';\n  var icone_telefone = document.createElement(\"div\");\n  icone_telefone.className = \"actions\";\n  icone_telefone.style.float = \"right\";\n  icone_telefone.innerHTML = '<i class=\"zmdi zmdi-phone\" style=\"background-color: transparent;\"></i>';\n  var icone_mais = document.createElement(\"div\");\n  icone_mais.className = \"actions more\";\n  icone_mais.style.float = \"right\";\n  icone_mais.innerHTML = '<i class=\"zmdi zmdi-more-vert\" style=\"background-color: transparent;\"></i>';\n  userBar.appendChild(icone_botao_voltar);\n  userBar.appendChild(avatar);\n  userBar.appendChild(name);\n  userBar.appendChild(icone_mais);\n  userBar.appendChild(icone_telefone);\n  userBar.appendChild(icone_camera);\n  var elementoPai = document.querySelector(\"#__next\");\n  if (elementoPai) {\n    elementoPai.insertBefore(userBar, elementoPai.firstChild);\n  }\n}\ncriarBarra();\n</script>\n<script>\n  const botBody = document.querySelector('typebot-standard')\n        .shadowRoot.querySelector('.typebot-container');\n  const userAvatar = botBody.querySelector('img[elementtiming=\"Bot avatar\"]');\n  const status = document.querySelector('.status');\n  const audioNot = document.createElement('audio');\n  audioNot.src = 'https://s3.typebot.io/public/workspaces/clxgpan6q000rljk8iyy6q66x/typebots/clxgpawpm000p10ew33m2mf3l/blocks/o6lzakgjf9az8tg6tyfk29lf?v=1718491238886';\n  let mensagesLength = 0;\n  createInfoMessage();\n  function createInfoMessage() {\n    const message= \"Esta é uma conta comercial\";\n    const div = document.createElement('div');\n    const infoHTML = `<div style=\"display: flex; align-items: center; gap: 4px; background-color: #d5f4f0; border-radius: 10px; padding: 10px; width: fit-content; max-width: 450px; margin: 2rem auto .5rem;\" class=\"info-container\">\n      <div>\n        <svg width=\"24px\" height=\"24px\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path fill=\"#4b5e63\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12 17.75C12.4142 17.75 12.75 17.4142 12.75 17V11C12.75 10.5858 12.4142 10.25 12 10.25C11.5858 10.25 11.25 10.5858 11.25 11V17C11.25 17.4142 11.5858 17.75 12 17.75ZM12 7C12.5523 7 13 7.44772 13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7Z\"></path>\n        </svg>\n      </div>\n      <p style=\"color: #53676b;\">${message}</p>\n    </div>`;\n    div.innerHTML = infoHTML;\n    const messagesContainer = botBody.querySelector('.typebot-chat-view');\n    messagesContainer.insertBefore(div, messagesContainer.firstChild);\n  }\n  setInterval(() => {\n      const isTyping = botBody.querySelector('.bubble1');\n      const sibling = isTyping?.parentElement?.parentElement?.nextSibling;\n      if(isTyping && sibling.src) {\n        status.innerText = 'gravando audio...'\n      } else if(isTyping) {      \n        status.innerText = 'digitando...'\n      } else {\n        status.innerText = 'Online'\n      }\n      const allMessages = botBody.querySelector('.typebot-chat-view').querySelectorAll('.items-start.typebot-host-bubble');    \n      if(allMessages.length > mensagesLength) {        \n        if(!isTyping) {\n          for (let i = mensagesLength; i < allMessages.length; i++) {\n            const iconContainer = document.createElement('div');\n            const checkIcon = `<svg id=\"checkIcon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 38.626 24.684\" style=\"position: absolute;bottom: 0;right: 5px;\" height=\"20\" width=\"18\">\n              <g id=\"Grupo_1\" data-name=\"Grupo 1\" transform=\"translate(-708.9 -601.383)\">\n                <path id=\"Caminho_6\" data-name=\"Caminho 6\" d=\"M728.035,623.468l1.382,1.482,17.929-20.334\" transform=\"translate(-1.937 -1.117)\" fill=\"none\" stroke=\"#07c654\" stroke-linecap=\"round\" stroke-width=\"3\"></path>\n                <path id=\"Caminho_7\" data-name=\"Caminho 7\" d=\"M712.017,616.07l7.088,8.039,17.757-20.14\" transform=\"translate(-1 -0.469)\" fill=\"none\" stroke=\"#07c654\" stroke-linecap=\"round\" stroke-width=\"3\"></path>\n              </g>\n            </svg>`;\n            iconContainer.innerHTML = checkIcon;\n            const currentMsg = allMessages[i];\n            currentMsg.append(iconContainer);\n          }\n          mensagesLength = allMessages.length;\n          audioNot.play();        \n        }\n      }\n    }, 400)\n</script>"
-    }
-  },
-  "createdAt": "2024-09-21T20:52:35.871Z",
-  "updatedAt": "2024-09-24T02:23:04.891Z",
-  "icon": "https://s3.typebot.io/public/workspaces/clxgpan6q000rljk8iyy6q66x/typebots/clxgpawpm000p10ew33m2mf3l/blocks/ppd1nlwo6woy0e8z6frmr62i?v=1718491461881",
-  "folderId": "cm1fszr5g000a3rd5kusgqwvt",
-  "publicId": "tema-whatsapp-f9sjf0s",
-  "customDomain": null,
-  "workspaceId": "mathuza@gmail.com",
-  "resultsTablePreferences": null,
-  "isArchived": false,
-  "isClosed": false,
-  "whatsAppCredentialsId": null,
-  "riskLevel": null
-}
+   "version": "6",
+   "id": "cm1cmltb30003c0utlf9sjf0s",
+   "name": "Tema Whatsapp",
+   "events": [
+     {
+       "id": "yrr8y4zobeuilc4hgi0upv4m",
+       "outgoingEdgeId": "hadici5c9y7j268r2dmr13re",
+       "graphCoordinates": { "x": 0, "y": 0 },
+       "type": "start"
+     }
+   ],
+   "groups": [
+     {
+       "id": "ryb27uv1cjy7zwx62nasim8q",
+       "title": "Pack Typebot",
+       "graphCoordinates": { "x": 398, "y": -6.56 },
+       "blocks": [
+         {
+           "id": "okkwzkr1qifomzx7cvwrt56z",
+           "type": "text",
+           "content": {
+             "richText": [
+               { "type": "p", "children": [{ "text": "Informe seu nome" }] }
+             ]
+           }
+         },
+         {
+           "id": "u3iqumupccy94li0p8jvr2t8",
+           "type": "text input",
+           "options": {
+             "labels": {
+               "placeholder": "Informe seu nome aqui!",
+               "button": "Enviar"
+             },
+             "variableId": "vxdnn35rtjib49ifx1aglqf3p",
+             "isLong": false
+           }
+         },
+         {
+           "id": "t16ejdpe2y5cwlrm6iu1a5oq",
+           "type": "text",
+           "content": {
+             "richText": [
+               {
+                 "type": "p",
+                 "children": [{ "bold": true, "text": "$meu_nome" }]
+               },
+               {
+                 "type": "p",
+                 "children": [
+                   {
+                     "text": "Bem-vindo ao Mundo da Automação com Pack Typebot! 🤖"
+                   }
+                 ]
+               }
+             ]
+           }
+         }
+       ]
+     }
+   ],
+   "edges": [
+     {
+       "id": "hadici5c9y7j268r2dmr13re",
+       "from": { "eventId": "yrr8y4zobeuilc4hgi0upv4m" },
+       "to": { "groupId": "ryb27uv1cjy7zwx62nasim8q" }
+     }
+   ],
+   "variables": [
+     {
+       "id": "vxdnn35rtjib49ifx1aglqf3p",
+       "name": "nome",
+       "isSessionVariable": false
+     }
+   ],
+   "theme": {
+     "general": {
+       "font": "Open Sans",
+       "background": {
+         "type": "Image",
+         "content": "https://s3.typebot.io/public/workspaces/clxgpan6q000rljk8iyy6q66x/typebots/clxgpawpm000p10ew33m2mf3l/blocks/hw249uzjqo07tp4g5q6f9rox?v=1718491741261"
+       }
+     },
+     "chat": {
+       "hostAvatar": {
+         "isEnabled": true,
+         "url": "$meu_avatar"
+       },
+       "hostBubbles": { "backgroundColor": "#FFFFFF", "color": "#303235" },
+       "guestBubbles": { "backgroundColor": "#d9fdd2", "color": "#000000" },
+       "buttons": { "backgroundColor": "#128c7e", "color": "#FFFFFF" },
+       "inputs": {
+         "backgroundColor": "#FFFFFF",
+         "color": "#303235",
+         "placeholderColor": "#9095A0"
+       }
+     },
+     "customCss": ".typebot-host-bubble {\n  padding-right: 12px;\n}\n#checkIcon {\n  stroke-dasharray: 40;\n  stroke-dashoffset: 40;\n  z-index: 99;\n}\n#checkIcon path:nth-child(1) {  \n  animation: showIcon 250ms ease forwards;\n  animation-delay: 500ms;\n}\n#checkIcon path:nth-child(2) {  \n  animation: showIcon 250ms ease forwards;\n  animation-delay: 400ms;\n}\n@keyframes showIcon {\n  to { stroke-dashoffset: 0 };\n}\n.typebot-chat-view > .flex:first-child {\n    padding-top: 30px;\n}\n\n\n.typebot-container {\n    background-size: initial!important;\n    background-repeat: repeat-x!important;\n}\n.typebot-host-bubble>.bubble-typing {\n  border-radius: 0 5px 5px 5px;\n}\n.typebot-host-bubble>.bubble-typing:after {\n    position: absolute;\n    content: \"\";\n    width: 0;\n    height: 0;\n    border-style: solid;\n    border-width: 0px 10px 10px 0;\n    border-color: transparent #fff transparent transparent;\n    top: 0;\n    left: -10px;\n}\n.typebot-guest-bubble {\n  position: relative;\n  border-radius: 5px 0 5px 5px;\n}\n.typebot-guest-bubble:after {\n  position: absolute;\n  content: \"\";\n  width: 0;\n  height: 0;\n  border-style: solid;\n}\n.typebot-guest-bubble:after {\n    border-width: 0px 0 10px 10px;\n    border-color: transparent transparent transparent #D9FDD2;\n    top: 0;\n    right: -10px;\n    border-style: solid;\n}\niframe[src=\"\"] {\n  position: fixed;\n  top: 0;\n  left: 0;\n  display: relative;\n  width: 100%;\n  height: 100% !important;\n  z-index: 999999;\n  border: none;\n  padding: 0;\n  margin: 0;\n}\n.info-container {\nfont-size: 14px;\n}\n.typebot-input .typebot-button {\n  content: \"\";\n  background: rgba(0, 138, 134, 1);\n  border-radius: 50%; \n  position: relative;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 50px; \n  height: 50px; \n  border: none;\n  font-size: 0px;\n  color: transparent;\n}\n.typebot-input .typebot-button::before {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  width: 25px;\n  height: 25px;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\" width=\"19px\"><path d=\"M476.59 227.05l-.16-.07L49.35 49.84A23.56 23.56 0 0027.14 52 24.65 24.65 0 0016 72.59v113.29a24 24 0 0019.52 23.57l232.93 43.07a4 4 0 010 7.86L35.53 303.45A24 24 0 0016 327v113.31A23.57 23.57 0 0026.59 460a23.94 23.94 0 0013.22 4 24.55 24.55 0 009.52-1.93L476.4 285.94l.19-.09a32 32 0 000-58.8z\" fill=\"white\"/></svg>');\n}\n.typebot-input .typebot-button .send-icon {\n  display: none; \n}\n\n.disabled\\:opacity-50:disabled {\n    opacity: 100%;\n}\n@media (max-width: 500px) {\n.info-container {\nmax-width: 400px !important;\n}\n}\na#lite-badge {\n  display: none!important;\n}"
+   },
+   "selectedThemeTemplateId": null,
+   "settings": {
+     "general": {
+       "isBrandingEnabled": false,
+       "isInputPrefillEnabled": true,
+       "isHideQueryParamsEnabled": true,
+       "rememberUser": { "isEnabled": false }
+     },
+     "typingEmulation": { "enabled": true, "speed": 300, "maxDelay": 1.5 },
+     "metadata": {
+       "title": "(1) WhatsApp",
+       "description": "",
+       "imageUrl": "https://s3.typebot.io/public/workspaces/clxgpan6q000rljk8iyy6q66x/typebots/clxgpawpm000p10ew33m2mf3l/blocks/s18qxz52lu4cfedpbuhmbch8?v=1718491503856",
+       "favIconUrl": "https://s3.typebot.io/public/workspaces/clxgpan6q000rljk8iyy6q66x/typebots/clxgpawpm000p10ew33m2mf3l/blocks/ppd1nlwo6woy0e8z6frmr62i?v=1718491461881",
+       "customHeadCode": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css\">\n<style>\n  .hide {\n    display: none!important;\n  }\n  typebot-standard {\n    position: relative;\n    z-index: 9999;\n  }\n  #__next {\n    position: relative;\n    z-index: 9999;\n}\n.user-bar {\n  width: 100%;\n  height: 55px;\n  background: #005e54;\n  color: #fff;\n  padding: 0;\n  font-size: 24px;\n  position: fixed;\n  z-index: 99999;\n  display: block;\n  top: 0;\n}\n.user-bar:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n.user-bar div {\n    float: left;\n    transform: translateY(-50%);\n    position: relative;\n    top: 50%;\n    margin-left: 10px;\n}\n.user-bar .actions {\n  float: right;\n  margin: 0 0 0 20px;\n}\n.user-bar .actions.more {\n  margin: 0 12px 0 32px;\n}\n.user-bar .actions.attachment {\n  margin: 0 0 0 30px;\n}\n.user-bar .actions.attachment i {\n  display: block;\n  transform: rotate(-45deg);\n}\n.user-bar .avatar {\n  margin: 0 0 0 5px;\n  width: 36px;\n  height: 36px;\n}\n.user-bar .avatar img {\n  border-radius: 50%;\n  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);\n  display: block;\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.user-bar .name {\n  font-size: 17px;\n  font-weight: 600;\n  text-overflow: ellipsis;\n  letter-spacing: 0.3px;\n  margin: 0 0 0 8px;\n  overflow: hidden;\n  white-space: nowrap;\n  width: 150px;\n}\n.user-bar .status {\n  display: block;\n  font-size: 13px;\n  font-weight: 400;\n  letter-spacing: 0;\n}\n\n.disabled\\:opacity-50:disabled {\n    opacity: 100%;\n}\n</style>\n<script>\nfunction criarBarra() {\n  var userBar = document.createElement(\"div\");\n  userBar.className = \"user-bar\";\n  var icone_botao_voltar = document.createElement(\"div\");\n  icone_botao_voltar.className = \"back\";\n  icone_botao_voltar.innerHTML = '<i class=\"zmdi zmdi-arrow-left\"></i>';\n  var avatar = document.createElement(\"div\");\n  avatar.className = \"avatar\";\n  avatar.innerHTML = '<img src=\"$meu_avatar\" alt=\"Avatar\">';\n  var name = document.createElement(\"div\");\n  name.className = \"name\";\n  name.innerHTML = '<span>$meu_nome</span> <span data-testid=\"psa-verified\" data-icon=\"psa-verified\" class=\"\"><svg viewBox=\"0 0 18 18\" height=\"18\" width=\"18\" preserveAspectRatio=\"xMidYMid meet\" class=\"\" version=\"1.1\" x=\"0px\" y=\"0px\" enable-background=\"new 0 0 18 18\" xml:space=\"preserve\"><polygon id=\"Star-2\" fill=\"#00DA60\" points=\"9,16 7.1,16.9 5.8,15.2 3.7,15.1 3.4,13 1.5,12 2.2,9.9 1.1,8.2 2.6,6.7 2.4,4.6 4.5,4 5.3,2 7.4,2.4 9,1.1 10.7,2.4 12.7,2 13.6,4 15.6,4.6 15.5,6.7 17,8.2 15.9,9.9 16.5,12 14.7,13 14.3,15.1 12.2,15.2 10.9,16.9 \"></polygon><polygon id=\"Check-Icon\" fill=\"#FFFFFF\" points=\"13.1,7.3 12.2,6.5 8.1,10.6 5.9,8.5 5,9.4 8,12.4 \"></polygon></svg></span><span class=\"status\">Online</span>';\n  var icone_camera = document.createElement(\"div\");\n  icone_camera.className = \"actions\";\n  icone_camera.style.float = \"right\";\n  icone_camera.innerHTML = '<i class=\"zmdi zmdi-videocam\" style=\"background-color: transparent;\"></i>';\n  var icone_telefone = document.createElement(\"div\");\n  icone_telefone.className = \"actions\";\n  icone_telefone.style.float = \"right\";\n  icone_telefone.innerHTML = '<i class=\"zmdi zmdi-phone\" style=\"background-color: transparent;\"></i>';\n  var icone_mais = document.createElement(\"div\");\n  icone_mais.className = \"actions more\";\n  icone_mais.style.float = \"right\";\n  icone_mais.innerHTML = '<i class=\"zmdi zmdi-more-vert\" style=\"background-color: transparent;\"></i>';\n  userBar.appendChild(icone_botao_voltar);\n  userBar.appendChild(avatar);\n  userBar.appendChild(name);\n  userBar.appendChild(icone_mais);\n  userBar.appendChild(icone_telefone);\n  userBar.appendChild(icone_camera);\n  var elementoPai = document.querySelector(\"#__next\");\n  if (elementoPai) {\n    elementoPai.insertBefore(userBar, elementoPai.firstChild);\n  }\n}\ncriarBarra();\n</script>\n<script>\n  const botBody = document.querySelector('typebot-standard')\n        .shadowRoot.querySelector('.typebot-container');\n  const userAvatar = botBody.querySelector('img[elementtiming=\"Bot avatar\"]');\n  const status = document.querySelector('.status');\n  const audioNot = document.createElement('audio');\n  audioNot.src = 'https://s3.typebot.io/public/workspaces/clxgpan6q000rljk8iyy6q66x/typebots/clxgpawpm000p10ew33m2mf3l/blocks/o6lzakgjf9az8tg6tyfk29lf?v=1718491238886';\n  let mensagesLength = 0;\n  createInfoMessage();\n  function createInfoMessage() {\n    const message= \"Esta é uma conta comercial\";\n    const div = document.createElement('div');\n    const infoHTML = `<div style=\"display: flex; align-items: center; gap: 4px; background-color: #d5f4f0; border-radius: 10px; padding: 10px; width: fit-content; max-width: 450px; margin: 2rem auto .5rem;\" class=\"info-container\">\n      <div>\n        <svg width=\"24px\" height=\"24px\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path fill=\"#4b5e63\" fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12 17.75C12.4142 17.75 12.75 17.4142 12.75 17V11C12.75 10.5858 12.4142 10.25 12 10.25C11.5858 10.25 11.25 10.5858 11.25 11V17C11.25 17.4142 11.5858 17.75 12 17.75ZM12 7C12.5523 7 13 7.44772 13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7Z\"></path>\n        </svg>\n      </div>\n      <p style=\"color: #53676b;\">${message}</p>\n    </div>`;\n    div.innerHTML = infoHTML;\n    const messagesContainer = botBody.querySelector('.typebot-chat-view');\n    messagesContainer.insertBefore(div, messagesContainer.firstChild);\n  }\n  setInterval(() => {\n      const isTyping = botBody.querySelector('.bubble1');\n      const sibling = isTyping?.parentElement?.parentElement?.nextSibling;\n      if(isTyping && sibling.src) {\n        status.innerText = 'gravando audio...'\n      } else if(isTyping) {      \n        status.innerText = 'digitando...'\n      } else {\n        status.innerText = 'Online'\n      }\n      const allMessages = botBody.querySelector('.typebot-chat-view').querySelectorAll('.items-start.typebot-host-bubble');    \n      if(allMessages.length > mensagesLength) {        \n        if(!isTyping) {\n          for (let i = mensagesLength; i < allMessages.length; i++) {\n            const iconContainer = document.createElement('div');\n            const checkIcon = `<svg id=\"checkIcon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 38.626 24.684\" style=\"position: absolute;bottom: 0;right: 5px;\" height=\"20\" width=\"18\">\n              <g id=\"Grupo_1\" data-name=\"Grupo 1\" transform=\"translate(-708.9 -601.383)\">\n                <path id=\"Caminho_6\" data-name=\"Caminho 6\" d=\"M728.035,623.468l1.382,1.482,17.929-20.334\" transform=\"translate(-1.937 -1.117)\" fill=\"none\" stroke=\"#07c654\" stroke-linecap=\"round\" stroke-width=\"3\"></path>\n                <path id=\"Caminho_7\" data-name=\"Caminho 7\" d=\"M712.017,616.07l7.088,8.039,17.757-20.14\" transform=\"translate(-1 -0.469)\" fill=\"none\" stroke=\"#07c654\" stroke-linecap=\"round\" stroke-width=\"3\"></path>\n              </g>\n            </svg>`;\n            iconContainer.innerHTML = checkIcon;\n            const currentMsg = allMessages[i];\n            currentMsg.append(iconContainer);\n          }\n          mensagesLength = allMessages.length;\n          audioNot.play();        \n        }\n      }\n    }, 400)\n</script>"
+     }
+   },
+   "createdAt": "2024-09-21T20:52:35.871Z",
+   "updatedAt": "2024-09-24T02:23:04.891Z",
+   "icon": "https://s3.typebot.io/public/workspaces/clxgpan6q000rljk8iyy6q66x/typebots/clxgpawpm000p10ew33m2mf3l/blocks/ppd1nlwo6woy0e8z6frmr62i?v=1718491461881",
+   "folderId": "cm1fszr5g000a3rd5kusgqwvt",
+   "publicId": "tema-whatsapp-f9sjf0s",
+   "customDomain": null,
+   "workspaceId": "mathuza@gmail.com",
+   "resultsTablePreferences": null,
+   "isArchived": false,
+   "isClosed": false,
+   "whatsAppCredentialsId": null,
+   "riskLevel": null
+ }
+ 
